@@ -1,0 +1,12 @@
+{
+  "name": "bangalore-coffee-shops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketing site and waitlist for the Bangalore Coffee Shops coffee-table book",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

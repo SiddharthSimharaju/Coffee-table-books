@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bangalore Coffee Shops — a coffee-table book</title>
+  <meta name="description" content="Every coffee shop in Bangalore, in one beautiful book. Join the waitlist for the first edition.">
+  <meta property="og:title" content="Bangalore Coffee Shops">
+  <meta property="og:description" content="A coffee-table book on the cafés, roasters, people and neighbourhoods that make Bangalore run. Join the waitlist.">
+  <meta property="og:image" content="assets/cover-front.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <section class="story" id="story" aria-label="Bangalore Coffee Shops">
+    <div class="stage" id="stage">
+      <div class="panel" aria-hidden="true"></div>
+
+      <div class="hero-copy" id="heroCopy">
+        <a class="wordmark" href=".">Coffee Culture</a>
+        <h1>Bangalore Coffee Shops</h1>
+        <p class="label">Coffee-table book</p>
+        <p class="lead">Every coffee shop in Bangalore, in one book — the cafés, roasters, people and neighbourhoods that make the city run.</p>
+        <form class="wl-form" data-source="hero" novalidate>
+          <label class="sr-only" for="email-hero">Email address</label>
+          <input id="email-hero" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+          <button class="btn" type="submit">Join the waitlist</button>
+          <p class="wl-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="fine">One email when pre-orders open. No spam.</p>
+      </div>
+
+      <div class="scene" id="scene">
+        <div class="floater">
+          <div class="book" id="book" aria-label="Bangalore Coffee Shops, a hardcover book">
+            <div class="spread-shadow" id="spreadShadow"></div>
+            <div class="spine" id="spine"><span>Bangalore Coffee Shops</span><i>Coffee Culture</i></div>
+            <div class="edge edge-r" id="edgeR"></div>
+            <div class="edge edge-l" id="edgeL"></div>
+            <div class="edge top-r" id="topR"></div>
+            <div class="edge top-l" id="topL"></div>
+
+            <!-- Back cover (fixed base) -->
+            <div class="back-cover">
+              <div class="face in pg r end">
+                <p class="imprint">Coffee Culture</p>
+              </div>
+              <div class="face out pg end"><p class="imprint">Coffee Culture</p></div>
+            </div>
+
+            <!-- Leaf 0: cover  |  dedication -->
+            <article class="leaf cover">
+              <div class="face front pg r title cover-face" aria-label="Bangalore Coffee Shops — book cover">
+                <p class="tag">Coffee Culture</p>
+                <h3>Bangalore Coffee Shops</h3>
+                <img class="photo" src="assets/bangalore.svg" alt="Illustration of Vidhana Soudha, Bangalore">
+                <span class="hinge"></span>
+              </div>
+              <div class="face back pg l ded">
+                <p class="tag">Coffee Culture</p>
+                <p class="ded-text">For everyone who stays for one more cup.</p>
+              </div>
+            </article>
+
+            <!-- Leaf 1: Indiranagar  |  contents -->
+            <article class="leaf">
+              <div class="face front pg r title">
+                <p class="tag">Chapter 01</p>
+                <h3>Indiranagar</h3>
+                <img class="photo" src="assets/bangalore.svg" alt="" style="object-position: 28% 50%">
+              </div>
+              <div class="face back pg l contents">
+                <p class="tag">Contents</p>
+                <ol>
+                  <li><span>01</span>Indiranagar</li>
+                  <li><span>02</span>Koramangala</li>
+                  <li><span>03</span>Jayanagar &amp; Basavanagudi</li>
+                  <li><span>04</span>Church Street &amp; the Centre</li>
+                  <li><span>05</span>Malleshwaram &amp; the North</li>
+                  <li><span>06</span>Beyond the Ring Road</li>
+                </ol>
+              </div>
+            </article>
+
+            <!-- Leaf 2: Koramangala  |  coming soon -->
+            <article class="leaf">
+              <div class="face front pg r title">
+                <p class="tag">Chapter 02</p>
+                <h3>Koramangala</h3>
+                <img class="photo" src="assets/bangalore.svg" alt="" style="object-position: 72% 50%">
+              </div>
+              <div class="face back pg l soon">
+                <p class="tag">First edition</p>
+                <h3>Coming soon.</h3>
+                <p class="body">Be the first to hold a copy.</p>
+                <form class="wl-form page-form" data-source="book" novalidate>
+                  <label class="sr-only" for="email-book">Email address</label>
+                  <input id="email-book" type="email" name="email" placeholder="Your email" autocomplete="email" required>
+                  <button class="btn" type="submit">Join the waitlist</button>
+                  <p class="wl-msg" role="status" aria-live="polite"></p>
+                </form>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

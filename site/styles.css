@@ -120,7 +120,7 @@ img { max-width: 100%; display: block; }
 .tag { margin: 0; font: 500 12px/1 var(--sans); letter-spacing: .02em; color: var(--red); }
 .pg h3 { margin: 18px 0 22px; font: 800 58px/.9 var(--sans); letter-spacing: -.05em; }
 .pg .body { margin: 0 0 18px; font-size: 16px; line-height: 1.3; letter-spacing: -.01em; }
-.pg > :not(.photo) { position: relative; }
+.pg:not(.cv) > :not(.photo) { position: relative; }
 
 .title .photo { flex: 1; min-height: 0; width: 100%; object-fit: cover; margin-top: 6px; background: #eee; }
 .title h3 { font-size: 64px; }
@@ -166,3 +166,32 @@ img { max-width: 100%; display: block; }
   .fine { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .floater { animation: none; } }
+
+/* ───────── Mockup-style pages: pale stock, B&W photography ───────── */
+.pg { padding: 26px 28px; background: var(--gut), #f4f4f4; }
+.pg.r, .pg.l { font-size: 12px; }
+.cv-photo, .tall, .wide { filter: grayscale(1) contrast(1.08); background: #ddd; object-fit: cover; }
+.run { display: flex; justify-content: space-between; font: 500 11px/1 var(--sans); letter-spacing: -.01em; }
+.run b { font-weight: 700; }
+.foot { margin: auto 0 0; font: 700 11px/1 var(--sans); }
+.foot.r-al { text-align: right; }
+.lead-b { margin: 0 0 12px; font: 700 12px/1.25 var(--sans); letter-spacing: -.01em; }
+.sm { margin: 0; font: 400 10.5px/1.35 var(--sans); }
+
+.cv { background: var(--gut), #efefef; padding: 0; display: block; }
+.cv::before { content: ""; position: absolute; inset: 0 auto 0 14px; width: 10px; background: linear-gradient(90deg, rgba(0,0,0,.09), rgba(255,255,255,.7) 50%, rgba(0,0,0,.05)); }
+.cv > .tag { position: absolute; top: 36px; left: 40px; color: var(--ink); font: 700 14px/1 var(--sans); }
+.cv > h3 { position: absolute; left: 40px; top: 38%; width: 210px; margin: 0; font: 800 40px/.98 var(--sans); letter-spacing: -.045em; }
+.cv > .sub { position: absolute; left: 40px; top: calc(38% + 132px); width: 190px; margin: 0; font: 700 13px/1.25 var(--sans); }
+.cv > .url { position: absolute; left: 40px; bottom: 36px; margin: 0; font: 700 12px/1 var(--sans); }
+.cv-photo { position: absolute; right: 26px; top: 26px; bottom: 26px; width: 36%; height: calc(100% - 52px); }
+.cv .hinge { z-index: 2; }
+
+.sl .cols { position: relative; flex: 1; margin-top: 44px; }
+.sl .txt { width: 40%; }
+.sl .tall { position: absolute; right: -2px; top: 0; bottom: 0; width: 56%; height: 100%; }
+.sr .lead-b { margin-top: 44px; max-width: 80%; }
+.sr .sm { max-width: 88%; }
+.sr .wide { flex: 1; min-height: 0; width: 100%; margin: 22px 0 14px; }
+.contents li { font-size: 19px; }
+.soon h3 { margin-top: 90px; }

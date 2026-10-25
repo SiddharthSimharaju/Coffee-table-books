@@ -33,7 +33,7 @@
       closedTy = vh * 0.18;
     } else {
       sClosed = Math.min((vh * 0.9) / H, (vw * 0.4) / W);
-      closedTx = vw * 0.22 - (W / 2) * sClosed * 0.93;   // book owns the right half
+      closedTx = vw * 0.22 - (W / 2) * sClosed;   // book owns the right half
       closedTy = 0;
     }
   }
@@ -135,7 +135,7 @@
     const open = easeSine(clamp(pos));
     const s = lerp(sClosed, sOpen, open);
     const rx = 0;
-    const ry = lerp(16, 0, open);
+    const ry = 0;
     book.style.transform =
       `translate3d(${lerp(closedTx, 0, open)}px, ${lerp(closedTy, 0, open)}px, 0) scale(${s}) rotateX(${rx}deg) rotateY(${ry}deg)`;
 

@@ -45,15 +45,15 @@ img { max-width: 100%; display: block; }
 .panel { position: absolute; top: 0; right: 0; bottom: 0; width: 56%; background: var(--panel); will-change: opacity; }
 
 .hero-copy {
-  position: absolute; z-index: 5; left: max(24px, 3.6vw); top: 0; bottom: 0; width: min(520px, 40vw);
+  position: absolute; z-index: 5; left: max(24px, 3.6vw); top: 0; bottom: 0; width: min(520px, 40vw); padding-top: 80px;
   display: flex; flex-direction: column; justify-content: center; will-change: opacity, transform;
 }
 .wordmark {
   position: absolute; top: 34px; left: 0; font: 500 30px/1 var(--serif); letter-spacing: -.01em; color: var(--red); text-decoration: none;
 }
-.hero-copy h1 { margin: 0 0 10px; font: 500 clamp(40px, 4.4vw, 64px)/1 var(--sans); letter-spacing: -.035em; }
-.label { margin: 0 0 40px; font-size: 17px; color: var(--grey); }
-.lead { margin: 0 0 40px; font: 400 clamp(19px, 1.7vw, 24px)/1.3 var(--sans); letter-spacing: -.01em; max-width: 25em; }
+.hero-copy h1 { margin: 0 0 10px; font: 500 clamp(34px, min(4.4vw, 8.5vh), 64px)/1 var(--sans); letter-spacing: -.035em; }
+.label { margin: 0 0 clamp(16px, 4vh, 40px); font-size: 17px; color: var(--grey); }
+.lead { margin: 0 0 clamp(18px, 4vh, 40px); font: 400 clamp(17px, min(1.7vw, 3.4vh), 24px)/1.3 var(--sans); letter-spacing: -.01em; max-width: 25em; }
 .fine { margin: 14px 0 0; font-size: 13px; color: var(--grey); }
 
 .scene { position: absolute; inset: 0; perspective: 5200px; perspective-origin: 50% 42%; cursor: pointer; touch-action: pan-y; }
@@ -195,3 +195,12 @@ img { max-width: 100%; display: block; }
 .sr .wide { flex: 1; min-height: 0; width: 100%; margin: 22px 0 14px; }
 .contents li { font-size: 19px; }
 .soon h3 { margin-top: 90px; }
+
+/* flat, top-down mockup look */
+.spine { display: none; }
+.spread-shadow { box-shadow: 0 2px 3px rgba(0,0,0,.18), 0 14px 30px -6px rgba(0,0,0,.25), 0 30px 60px -20px rgba(0,0,0,.2); }
+.cv { background: linear-gradient(180deg, #f1f1f1, #e9e9e9); border-radius: 2px 4px 4px 2px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.05); }
+.cv::before { inset: 0 auto 0 0; width: 34px; background: linear-gradient(90deg, #dcdcdc 0, #f6f6f6 14%, #e4e4e4 30%, #f8f8f8 52%, #e6e6e6 78%, #efefef); box-shadow: 1px 0 2px rgba(0,0,0,.14); }
+.cv > .tag, .cv > h3, .cv > .sub, .cv > .url { left: 56px; }
+.cv > h3 { width: 190px; }
+.cv .hinge { display: none; }
